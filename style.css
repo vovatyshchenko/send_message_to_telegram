@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: #000;
+	font-size: 16px;
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding: 0 15px;
+}
+.form__title {
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+.input__name,
+.input__phone,
+.input__theme,
+.form__btn {
+	font-family: 'Exo', sans-serif;
+	font-weight: 400;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 3px;
+	border: 1px solid #e5e5e5;
+	outline: none;
+}
+.input__theme {
+	resize: none;
+	height: 100px; 
+}
+.form__btn {
+	font-weight: 700;
+}
+.form__btn:hover {
+	cursor: pointer;
+}
+.success {
+	color: green;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+.fail {
+	color: red;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+.form__msg {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 33.3%;
+}
+@media (max-width: 950px) {
+	.form__msg {
+		max-width: 53.3%;
+	}
+}
+@media (max-width: 750px) {
+	.form__msg {
+		max-width: 63.3%;
+	}
+}
+@media (max-width: 580px) {
+	.form__msg {
+		max-width: 100%;
+	}
+}

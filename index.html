@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORM</title>
+</head>
+<body>
+	<div class="container">
+		<form action="/" id="form" class="form__msg" method="POST" autocomplete="off">
+			<p class="form__title">обратная связь</p>
+			<p class="form__message"></p>
+			<input type="text" class="input__name" name="name" tabindex="0" placeholder="Введите ваше имя" required>
+			<input type="text" class="input__phone" name="phone" tabindex="0" pattern="^[0-9]+$" placeholder="Введите ваш телефон" required>
+			<textarea class="input__theme" name="theme" placeholder="Введите сообщение"></textarea>
+			<input type="submit" class="form__btn" value="Отправить"> 	
+		</form>	
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="main.js"></script>	
+</body>
+</html>
